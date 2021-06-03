@@ -9,6 +9,7 @@ class ComposerStaticInita86e251cbf23e1ef2bf6e1e1e3d15591
     public static $files = array (
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+        'ce89ac35a6c330c55f4710717db9ff78' => __DIR__ . '/..' . '/kriswallsmith/assetic/src/functions.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -20,6 +21,7 @@ class ComposerStaticInita86e251cbf23e1ef2bf6e1e1e3d15591
         array (
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Polyfill\\Ctype\\' => 23,
+            'Symfony\\Component\\Process\\' => 26,
         ),
     );
 
@@ -36,6 +38,20 @@ class ComposerStaticInita86e251cbf23e1ef2bf6e1e1e3d15591
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
         ),
+        'Symfony\\Component\\Process\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/process',
+        ),
+    );
+
+    public static $prefixesPsr0 = array (
+        'A' => 
+        array (
+            'Assetic' => 
+            array (
+                0 => __DIR__ . '/..' . '/kriswallsmith/assetic/src',
+            ),
+        ),
     );
 
     public static $classMap = array (
@@ -47,6 +63,7 @@ class ComposerStaticInita86e251cbf23e1ef2bf6e1e1e3d15591
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInita86e251cbf23e1ef2bf6e1e1e3d15591::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInita86e251cbf23e1ef2bf6e1e1e3d15591::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInita86e251cbf23e1ef2bf6e1e1e3d15591::$prefixesPsr0;
             $loader->classMap = ComposerStaticInita86e251cbf23e1ef2bf6e1e1e3d15591::$classMap;
 
         }, null, ClassLoader::class);

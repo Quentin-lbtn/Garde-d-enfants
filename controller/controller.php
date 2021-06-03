@@ -27,7 +27,6 @@ class Controller {
     public function accueil($twig) {
         echo $twig->render('accueil.twig');
     }
-
     public function moncompte($twig) {
         echo $twig->render('moncompte.twig');
     }

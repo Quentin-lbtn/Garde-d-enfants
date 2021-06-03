@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => 'ccf78136bc2255b7c07fc5ab930bb6132743a7ac',
+    'reference' => 'af487975e13e487a959fb66a64f30bfdf3de6005',
     'name' => '__root__',
   ),
   'versions' => 
@@ -18,7 +18,16 @@
       'aliases' => 
       array (
       ),
-      'reference' => 'ccf78136bc2255b7c07fc5ab930bb6132743a7ac',
+      'reference' => 'af487975e13e487a959fb66a64f30bfdf3de6005',
+    ),
+    'kriswallsmith/assetic' => 
+    array (
+      'pretty_version' => 'v1.4.0',
+      'version' => '1.4.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'e911c437dbdf006a8f62c2f59b15b2d69a5e0aa1',
     ),
     'symfony/polyfill-ctype' => 
     array (
@@ -37,6 +46,15 @@
       array (
       ),
       'reference' => '5232de97ee3b75b0360528dae24e73db49566ab1',
+    ),
+    'symfony/process' => 
+    array (
+      'pretty_version' => 'v3.4.47',
+      'version' => '3.4.47.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'b8648cf1d5af12a44a51d07ef9bf980921f15fca',
     ),
     'twig/twig' => 
     array (

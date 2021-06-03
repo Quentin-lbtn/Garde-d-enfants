@@ -11,6 +11,8 @@ class Route {
 
         //if the requested url matches the one from the route
         //get the url params and run the callback passing the params
+        var_dump($route);
+        var_dump($_SERVER['REQUEST_URI']);
         if($struct){
             $params = self::getParams($route, $_SERVER['REQUEST_URI']);
             $function->__invoke($params);
@@ -38,7 +40,10 @@ class Route {
         list($a, $b) = self::urlToArray($url1, $url2);
 
         //if the sizes of the arrays don't match, their structures don't match either
+        var_dump($a);
+        var_dump($b);
         if(sizeof($a) !== sizeof($b)){
+            var_dump("error1");
             return false;
         }
 
@@ -49,6 +54,7 @@ class Route {
             // or the dynamic values start with a '?' character
             // their structures don't match
             if($value[0] !== ':' && $value !== $b[$key] || $value[0] === ':' && $b[$key][0] === '?'){
+               var_dump("error2");
                 return false;
             }
         }
