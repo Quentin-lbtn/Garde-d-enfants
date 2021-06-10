@@ -1,0 +1,97 @@
+{% extends "base.twig" %}
+{% block head %}
+<head>
+  <meta charset="utf-8">
+  <title>Titre de la page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/style.css" type="text/css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+{% endblock %}
+{% block content %}
+
+{% include "include/navbar.twig" %}
+
+<div class="container">
+<div class="row">
+    <div class="container col-6 logofs " id="middle"> 
+    "logo" FriendSheep
+    </div>
+    <div class="container col-6 right ">
+        <div class="container" id="middle">
+        <div class="row">
+    <div class="col-12 create">
+        <p>Créez votre compte</p>
+    </div>
+    <div class="col-12 connect">
+        <p>Vous avez déjà un compte chez FriendSheep ? <a href="#">Connectez-vous </a></p>
+    </div>
+        </div>
+        </div>
+
+
+<div class="row col-12 d-flex email">
+  <label for="colFormLabel" class="col-12 col-form-label"></label>
+  <div class="col-12">
+    <input type="email" class="form-control" id="colFormLabel" placeholder="Adresse Mail*">
+  </div>
+</div>
+<div class="row">
+  <div class="col-6">
+    <input type="text" class="form-control" placeholder="Nom*" aria-label="First name">
+  </div>
+  <div class="col-6">
+    <input type="text" class="form-control" placeholder="Prénom*" aria-label="Last name">
+  </div>
+</div>
+<div class="row">
+    <div class="col-12">
+     <input id="telNo" name="telNo" type="tel"
+       placeholder="Téléphone*">
+    </div>
+</div>
+<div class="row">
+  <div class="col-6 birthday">
+    <p>Date de naissance</p>
+  </div>
+</div>
+
+
+<div>
+    <label for="bday"></label>
+    <input type="date" id="bday" name="bday">
+</div>
+<div class="col-12">
+    <label for="inputPassword2" class="visually-hidden">Password</label>
+    <input type="password" class="form-control" id="inputPassword2" placeholder="Mot de passe*">
+  </div>
+  <div class="col-12">
+    <label for="inputPassword2" class="visually-hidden">Password</label>
+    <input type="password" class="form-control" id="inputPassword2" placeholder="Validation du mot de passe*">
+  </div>
+
+<div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+      <label class="form-check-label" for="invalidCheck2">
+        <p> En cliquant sur CREER UN COMPTE, je déclare avoir lu et accepté les <a href="#">Conditions d'utilisation</a> et la <a href="#">Politique de confidentialité.</a>
+      </label>
+    </div>
+  </div>
+  <div class="col-12 btncreer">
+    <button class="btn btn-primary" type="submit">CREER UN COMPTE</button>
+  </div>
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+{% endblock %}

@@ -1,9 +1,3 @@
-#nav
-{
-    background-color: cornflowerblue;
-    font-size: 20px;
-    color: white;
-}
 
 #middle
 {
@@ -12,29 +6,64 @@
 
 .nom
 {
-    position: relative;
-    right: 55px;
+    text-align: center;
     font-size: 50px;
 }
 
 .gcpp
 {
+    text-align: center;
     font-size: 25px;
     margin-top: 20px;
 }
 
 .texte
 {
+    text-align: center;
     font-size: 15px;
     margin-top: 20px;
-    position: relative;
-    left: 35px;
 }
 
 .btn
 {
-    position: relative;
-    left: 35%;
-    top: 50px;
+    
     background-color: cornflowerblue;
+}
+
+.create
+{
+    font-size: 25px;
+}
+
+.connect
+{
+    font-size: 20px;
+}
+
+.email
+{
+    font-size: 15px;
+}
+
+.right
+{
+    padding: 50px;
+    background-color: white;
+}
+
+#telNo
+{
+    width: 100%;
+    padding: 6px 12px;
+}
+
+#bday
+{
+    width: 100%;
+    padding: 6px 12px;
+}
+
+.btncreer
+{
+    text-align: right;
 }

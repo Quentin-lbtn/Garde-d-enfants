@@ -39,5 +39,8 @@ class Controller {
     public function financement($twig) {
         echo $twig->render('financement.twig');
     }
+    public function inscription($twig) {
+        echo $twig->render('inscription.twig');
+    }
 }
 ?>

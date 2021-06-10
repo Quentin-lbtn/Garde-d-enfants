@@ -72,3 +72,11 @@ Route::get('/financement', function(){
     $controller = new Controller();
     $controller->financement($twig);
 });
+Route::get('/inscription', function(){
+    $loader = new \Twig\Loader\FilesystemLoader('view');
+    $twig = new \Twig\Environment($loader, [
+    'cache' => false,
+    ]);
+    $controller = new Controller();
+    $controller->inscription($twig);
+});

@@ -9,43 +9,23 @@
 </head>
 {% endblock %}
 {% block content %}
-<br>
-<br>
 
-<div class="container" id="nav" style="max-width: 100% !important;">
-  <div class="row">
-    <div class="col-lg-1">
-     Logo
-    </div>
-    <div class="col-lg-3">
-    </div>
-    <div class="col-lg-2 qsn">
-     Qui sommes-nous ?
-    </div>
-    <div class="col-lg-2 contacter">
-      Nous Contacter
-    </div>
-    <div class="col-lg-2 ph">
-      Planning et Horaires
-    </div>
-    <div class="col-lg-2 connect">
-      Se Connecter
-    </div>
-  </div>
-</div>
+{% include "include/navbar.twig" %}
+
+
 
 <div class="container" id="middle">
   <div class="row">
-    <div class="col-lg-9 offset-md-4 nom">
-    FriendSheep
+    <div class="col-12 nom">
+    <p>FriendSheep</p>
     </div>
-    <div class="col-lg-6 offset-md-2 gcpp">
-     Garde d'enfants ? Crèche ? Professionnel ? Particuliers ?
+    <div class="col-12 gcpp">
+     <p>Garde d'enfants ? Crèche ? Professionnel ? Particuliers ?</p>
     </div>
-    <div class="col-lg-9 offset-md-3 texte">
-      Nous vous accompagnons dans vos recherches
+    <div class="col-12 texte">
+      <p>Nous vous accompagnons dans vos recherches</p>
     </div>
-    <div class="col">
+    <div class="col-12 d-flex justify-content-center">
     <a class="btn btn-primary" href="#" role="button">Accéder au site</a>
     </div>  
   </div>
