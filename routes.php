@@ -80,3 +80,11 @@ Route::get('/inscription', function(){
     $controller = new Controller();
     $controller->inscription($twig);
 });
+Route::get('/services', function(){
+    $loader = new \Twig\Loader\FilesystemLoader('view');
+    $twig = new \Twig\Environment($loader, [
+    'cache' => false,
+    ]);
+    $controller = new Controller();
+    $controller->services($twig);
+});

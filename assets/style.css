@@ -4,6 +4,10 @@
     margin-top: 15%;
 }
 
+.accueil
+{
+    color: crimson;
+}
 .nom
 {
     text-align: center;
@@ -64,6 +68,11 @@
 }
 
 .btncreer
+{
+    text-align: right;
+}
+
+.btnenvoyer
 {
     text-align: right;
 }

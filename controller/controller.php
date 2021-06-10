@@ -42,5 +42,8 @@ class Controller {
     public function inscription($twig) {
         echo $twig->render('inscription.twig');
     }
+    public function services($twig) {
+        echo $twig->render('services.twig');
+    }
 }
 ?>
