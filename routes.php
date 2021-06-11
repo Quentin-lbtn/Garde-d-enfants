@@ -88,3 +88,11 @@ Route::get('/services', function(){
     $controller = new Controller();
     $controller->services($twig);
 });
+Route::get('/seconnecter', function(){
+    $loader = new \Twig\Loader\FilesystemLoader('view');
+    $twig = new \Twig\Environment($loader, [
+    'cache' => false,
+    ]);
+    $controller = new Controller();
+    $controller->seconnecter($twig);
+});

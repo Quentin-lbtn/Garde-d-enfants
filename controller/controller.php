@@ -45,5 +45,8 @@ class Controller {
     public function services($twig) {
         echo $twig->render('services.twig');
     }
+    public function seconnecter($twig) {
+        echo $twig->render('seconnecter.twig');
+    }
 }
 ?>
