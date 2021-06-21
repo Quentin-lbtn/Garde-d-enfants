@@ -19,7 +19,7 @@ class Route {
             //prevent checking all other routes
             die();
         } else {
-            echo "erreur mon gars"; 
+    
         }
     }
 
